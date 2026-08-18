@@ -15,9 +15,9 @@ export default function Footer() {
           <div className="md:text-right">
             <h3 className="font-display text-lg">Atendimento</h3>
             <ul className="mt-2 space-y-1 text-sm text-cream/70">
-              <li>+55 (12) 98201-9008 — whatsapp</li>
-              <li>seg. a sex. · 9h às 19h</li>
-              <li>sáb · 9h às 14h</li>
+              <li>+55 (12) 98201-9008 — WhatsApp</li>
+              <li>Seg. a Sex. · 9h às 19h</li>
+              <li>Sáb. · 9h às 14h</li>
             </ul>
             <div className="mt-6 flex items-center gap-4 md:justify-end">
               <a

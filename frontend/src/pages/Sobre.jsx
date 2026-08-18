@@ -1,9 +1,9 @@
 export default function Sobre() {
   const fotos = [
-    { src: "/imagens/sobre-1.jpg", label: "Foto 1" },
-    { src: "/imagens/sobre-2.jpg", label: "Foto 2" },
-    { src: "/imagens/sobre-3.jpg", label: "Foto 3" },
-    { src: "/imagens/sobre-4.jpg", label: "Foto 4" },
+    { src: `${import.meta.env.BASE_URL}imagens/sobre-1.jpg`, label: "Foto 1" },
+    { src: `${import.meta.env.BASE_URL}imagens/sobre-2.jpg`, label: "Foto 2" },
+    { src: `${import.meta.env.BASE_URL}imagens/sobre-3.jpg`, label: "Foto 3" },
+    { src: `${import.meta.env.BASE_URL}imagens/natalia_beauty.jpeg`, label: "Foto 4" },
   ];
 
   return (
