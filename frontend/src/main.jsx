@@ -1,6 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import "./index.css";
 
 import Layout from "./components/Layout.jsx";
@@ -11,10 +11,9 @@ import Procedimento from "./pages/Procedimento.jsx";
 import Contato from "./pages/Contato.jsx";
 import NotFound from "./pages/NotFound.jsx";
 
-// React Router v7 — Declarative Mode (<BrowserRouter>, <Routes>, <Route>)
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route element={<Layout />}>
           <Route index element={<Home />} />
@@ -25,6 +24,6 @@ createRoot(document.getElementById("root")).render(
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   </StrictMode>
 );
