@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@theme {
+  /* Paleta — rosé/blush editorial, com contraste em vinho profundo */
+  --color-blush: #fbf1ef;
+  --color-blush-deep: #f4dedb;
+  --color-rosewood: #7a3b3e;
+  --color-rosewood-dark: #4a2224;
+  --color-clay: #c97b6d;
+  --color-gold: #b99257;
+  --color-ink: #2a1e1c;
+  --color-cream: #fffdfb;
+
+  --font-display: "Fraunces", serif;
+  --font-body: "Manrope", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-blush);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+/* Marquee assinatura — faixa de procedimentos em looping contínuo */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-track {
+  animation: marquee 28s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Foco visível acessível */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--color-rosewood);
+  outline-offset: 3px;
+}
