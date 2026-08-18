@@ -212,7 +212,7 @@ export default function Procedimento() {
                   className="aspect-square overflow-hidden rounded-2xl"
                 >
                   <img
-                    src={src}
+                    src={src.startsWith("http") ? src : `${import.meta.env.BASE_URL}${src.replace(/^\//, "")}`}
                     alt={`${proc.name} - imagem ${index + 1}`}
                     className="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
                   />

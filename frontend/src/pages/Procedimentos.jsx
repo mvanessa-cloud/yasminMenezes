@@ -13,7 +13,7 @@ export default function Procedimentos() {
           {/* Foto 1 */}
           <div className="aspect-[4/3] overflow-hidden rounded-3xl bg-blush border-2 border-dashed border-rosewood/20 flex flex-col items-center justify-center gap-2 text-rosewood/40 transition-transform duration-300 hover:scale-[1.02]">
             <img
-              src="/imagens/trabalhando_nataliabaeuty.jpeg"
+              src={`${import.meta.env.BASE_URL}imagens/trabalhando_nataliabaeuty.jpeg`}
               alt="Yasmin Menezes trabalhando"
               className="h-full w-full object-cover"
             />

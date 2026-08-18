@@ -61,7 +61,7 @@ export default function ProceduresGrid({ showHeader = true, isHome = false }) {
             <div className="flex-shrink-0 md:w-72 lg:w-80">
               <div className="aspect-[4/5] overflow-hidden rounded-3xl bg-blush">
                 <img
-                  src="/imagens/.jpg"
+                  src={`${import.meta.env.BASE_URL}imagens/trabalhando_nataliabaeuty.jpeg`}
                   alt="Procedimentos estéticos"
                   className="h-full w-full object-cover"
                 />
