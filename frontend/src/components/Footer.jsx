@@ -2,7 +2,7 @@ export default function Footer() {
   return (
     <footer className="bg-rosewood-dark text-cream/90">
       <div className="mx-auto max-w-6xl px-6 py-16">
-        <div className="grid gap-12 md:grid-cols-3">
+        <div className="flex flex-col gap-10 md:flex-row md:items-start md:justify-between">
           <div>
             <p className="font-display text-2xl">
               Yasmin<span className="italic text-clay"> Menezes</span>
@@ -12,16 +12,14 @@ export default function Footer() {
             </p>
           </div>
 
-
-        
-          <div>
+          <div className="md:text-right">
             <h3 className="font-display text-lg">Atendimento</h3>
             <ul className="mt-2 space-y-1 text-sm text-cream/70">
               <li>+55 (12) 98201-9008 — whatsapp</li>
               <li>seg. a sex. · 9h às 19h</li>
               <li>sáb · 9h às 14h</li>
             </ul>
-            <div className="mt-6 flex items-center gap-4">
+            <div className="mt-6 flex items-center gap-4 md:justify-end">
               <a
                 href="https://www.instagram.com/designermenezess/#"
                 target="_blank"
